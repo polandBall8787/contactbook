@@ -1,0 +1,155 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+.overlay {
+  position: relative;
+  z-index: 1;
+  
+  display:none;
+}
+
+aside {
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+nav {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.btn-group {
+  margin: 10px;
+  z-index: 2;
+  position: relative;
+  width: 250px;
+  height: 50px;
+}
+
+.aside {
+  margin-left: auto;
+  width: 40px;
+  height: 40px;
+  z-index: 5;
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.primary {
+  position: absolute;   /* 改為絕對定位 */
+  z-index: 2;
+  width: 25px;
+  height: 50px;
+  background-color: #62b1e6;
+  color: rgba(0, 0, 0, 0.5);
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  transition: width 0.5s ease;
+}
+
+.primary:hover {
+  width: 100%;          /* 完整覆蓋 text */
+}
+
+.text {
+  position: absolute;   /* 固定位置 */
+  width: 250px;
+  height: 50px;
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.teacher {
+  background-color: #53fbad;
+}
+
+.check {
+  background-color: #4281f5;
+}
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #151515;
+  color: white;
+  font: 1em '微軟正黑體', sans-serif;
+  bottom: 0;
+  width: 100%;
+}
+
+body {
+  background-image: url('https://ppt.cc/fyOUxx@.png');
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: black;
+}
+
+.e {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 20px 20px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+main {
+  padding: 10px 10px;
+  min-height: 100vh;
+  color: white;
+}
+
+.main {
+  background-color: rgba(0, 0, 0, 0.5);  
+  padding: 10px 10px;
+  margin: 5px 5px;
+  min-height: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  line-height: 1.6;
+}
+
+ol {
+  list-style-type: decimal;
+  margin-left: 20px;
+  line-height: 1.6;
+}
